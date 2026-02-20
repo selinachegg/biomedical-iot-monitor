@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="logo.png" alt="Logo" width="200"/>
+</p>
+
 # Biomedical IoT Monitor — BITalino & Pulse Sensor
 
 A prototype system for real-time physiological signal acquisition (heart rate / ECG) using BITalino devices or Arduino pulse sensors, with live upload to [ThingSpeak](https://thingspeak.com).
@@ -7,6 +11,10 @@ A prototype system for real-time physiological signal acquisition (heart rate / 
 ---
 
 ## Hardware Required
+
+<p align="center">
+  <img src="Bitalino_card.jpg" alt="BITalino card" width="400"/>
+</p>
 
 - **BITalino (R)evolution** board — multichannel biosignal acquisition over Bluetooth
 - **Arduino** with an analog pulse sensor wired to pin A0
