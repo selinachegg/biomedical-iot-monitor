@@ -80,9 +80,14 @@ pip install pyserial numpy
 For Bluetooth connectivity:
 ```bash
 pip install pybluez
-# Linux also requires the system Bluetooth headers:
-# sudo apt install libbluetooth-dev
 ```
+
+OS-level prerequisites for PyBluez:
+
+| OS | Requirement |
+|----|-------------|
+| **Windows** | Install [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) with the "Desktop development with C++" workload enabled before running `pip install pybluez`. |
+| **Linux (Debian/Ubuntu)** | `sudo apt install libbluetooth-dev` |
 
 Install the BITalino library locally:
 ```bash
