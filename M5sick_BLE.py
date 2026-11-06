@@ -9,11 +9,11 @@ import datetime
 
 
 #for j in nearby_devices:
- #   if j =="D3:9F:17:DB:B1:3F":
+ #   if j =="00:00:00:00:00:00":
   #      print("Ok_adr_MAC")
 
 client_socket=socket.socket(socket.AF_BLUETOOTH,socket.SOCK_STREAM, socket.BTPROTO_RFCOMM)
-client_socket.connect(("24:A1:60:53:C1:2A",1))
+client_socket.connect(("00:00:00:00:00:00",1))
 #time.sleep(50)
 size = 1024
 k=100

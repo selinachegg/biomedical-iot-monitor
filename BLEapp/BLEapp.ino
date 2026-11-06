@@ -20,7 +20,7 @@ void setup()
       if(num > 0)
       {
           LBTDeviceInfo info = {0};
-          bool conn_result = LBTClient.connect("12:34:56:ab:cd:ef");//bool conn_result = LBTClient.connect("28:33:34:EE:24:95", "1234");
+          bool conn_result = LBTClient.connect("12:34:56:ab:cd:ef");//bool conn_result = LBTClient.connect("00:00:00:00:00:00", "1234");
           if( !conn_result )
           {
               Serial.println("Cannot connect to SPP Server successfully");

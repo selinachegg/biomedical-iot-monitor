@@ -2,7 +2,7 @@
   <img src="logo.png" alt="Logo" width="200"/>
 </p>
 
-# Biomedical IoT Monitor — BITalino & Pulse Sensor
+# Biomedical IoT Monitor: BITalino & Pulse Sensor
 
 A prototype system for real-time physiological signal acquisition (heart rate / ECG) using BITalino devices or Arduino pulse sensors, with live upload to [ThingSpeak](https://thingspeak.com).
 
@@ -16,7 +16,7 @@ A prototype system for real-time physiological signal acquisition (heart rate / 
   <img src="Bitalino_card.jpg" alt="BITalino card" width="400"/>
 </p>
 
-- **BITalino (R)evolution** board — multichannel biosignal acquisition over Bluetooth
+- **BITalino (R)evolution** board: multichannel biosignal acquisition over Bluetooth
 - **Arduino** with an analog pulse sensor wired to pin A0
 - Host computer running **Windows or Linux** with Bluetooth support
 
@@ -110,7 +110,7 @@ python setup.py install
 | Sketch | Status | Notes |
 |--------|--------|-------|
 | `Heartb/Heartb.ino` | Partial | Requires the companion interrupt handler file (`interruptSetup`, `serialOutput`, `serialOutputWhenBeatHappens`). The standard [Pulse Sensor Arduino library](https://github.com/WorldFamousElectronics/PulseSensor_Amped_Arduino) provides these. |
-| `BLEapp/BLEapp.ino` | Incomplete | Missing `loop()` body; uses placeholder MAC address (`12:34:56:ab:cd:ef`); depends on the **MediaTek LinkIt LBT library** — not compatible with standard Arduino, ESP32, or other common boards. |
+| `BLEapp/BLEapp.ino` | Incomplete | Missing `loop()` body; uses placeholder MAC address (`12:34:56:ab:cd:ef`); depends on the **MediaTek LinkIt LBT library**, not compatible with standard Arduino, ESP32, or other common boards. |
 
 ---
 
@@ -131,7 +131,7 @@ miniprojetbell/
 ├── BLEapp/
 │   └── BLEapp.ino         # Incomplete BLE client (MediaTek LinkIt LBT library)
 ├── Heartb/
-│   └── Heartb.ino         # Arduino pulse sensor sketch (partial — missing interrupt handlers)
+│   └── Heartb.ino         # Arduino pulse sensor sketch (partial, missing interrupt handlers)
 ├── Heartbeat/
 │   └── Heartb_python.py   # Python serial reader → ThingSpeak uploader
 ├── ex_master1.py          # Bluetooth RFCOMM logger → data.txt
